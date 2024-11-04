@@ -97,6 +97,17 @@ see *ovh* folder
 
 # ------- SCRIPTS ------
 
+## Convert from Debian 12 to Proxmox 8 (debian12-2-proxmox8.sh) *optional*
+Assumptions: Debian11 installed with a valid FQDN hostname set
+* Tested on KVM, VirtualBox and Dedicated Server
+* Will automatically detect cloud-init and disable.
+* Will automatically generate a correct /etc/hosts
+* Note: will automatically run the install-post.sh script
+```
+curl -O https://raw.githubusercontent.com/dcalbo/xshok-proxmox/master/debian-2-proxmox/debian12-2-proxmox8.sh && chmod +x debian12-2-proxmox8.sh
+./debian12-2-proxmox8.sh
+```
+
 ## Convert from Debian 11 to Proxmox 7 (debian11-2-proxmox7.sh) *optional*
 Assumptions: Debian11 installed with a valid FQDN hostname set
 * Tested on KVM, VirtualBox and Dedicated Server
