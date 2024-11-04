@@ -581,7 +581,7 @@ if [ "${XS_MOTD,,}" == "yes" ] ; then
 ## Pretty MOTD BANNER
   if ! grep -q https "/etc/motd" ; then
     cat << 'EOF' > /etc/motd.new
-	   This system is optimised by: eXtremeSHOK.com
+	   This system is optimised by: consultasit.com.ar
 EOF
 
     cat /etc/motd >> /etc/motd.new
@@ -929,9 +929,9 @@ pve-efiboot-tool refresh
 /usr/bin/env DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::='--force-confdef' autoremove
 /usr/bin/env DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::='--force-confdef' autoclean
 
-echo "# eXtremeSHOK.com" > /etc/extremeshok
-date >> /etc/extremeshok
+echo "# eXtremeSHOK.com" > /etc/consultasit
+date >> /etc/consultasit
 
 ## Script Finish
 echo -e '\033[1;33m Finished....please restart the system \033[0m'
-echo "Optimisations by https://eXtremeSHOK.com"
+echo "Optimisations by https://consultasit.com.ar"
